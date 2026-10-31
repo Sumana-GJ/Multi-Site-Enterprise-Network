@@ -78,10 +78,8 @@ Network operation was verified using Cisco IOS commands and connectivity tests:
 ## Project Files
 
 - `Multi_Site_Enterprise_Network.pkt` — Packet Tracer topology and configuration
-- `README.md` — Project documentation
 
 ## Notes
 
 This is a learning and simulation project created in Cisco Packet Tracer. It is not a production network deployment.
 
-- `README.md` — Project documentation
