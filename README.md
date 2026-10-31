@@ -6,6 +6,7 @@
 Designed and configured a simulated multi-site enterprise network using Cisco Packet Tracer. The lab demonstrates VLAN segmentation, inter-VLAN routing, dynamic routing, DHCP, NAT overload, access control, and secure remote device access.
 
 ## Network Topology
+![Network Topology](Packet_Tracer_Screenshots/01-Network-Topology.png)
 
 The simulated network consists of:
 
