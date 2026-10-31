@@ -15,6 +15,7 @@ The simulated network consists of:
 - **Branch network:** A separate LAN connected to R2.
 
 ## IP Addressing and VLANs
+![VLAN Configuration](Packet_Tracer_Screenshots/02-Vlan-Brief.png)
 
 | VLAN |    Name    |     Network     |  Default Gateway |
 |------|------------|-----------------|------------------|
@@ -27,6 +28,9 @@ The simulated network consists of:
 The HQ VLANs use router-on-a-stick inter-VLAN routing through R1.
 
 ## Technologies and Concepts
+![Trunk Port Configuration](Packet_Tracer_Screenshots/03-Trunk-Ports.png)
+
+![OSPF Neighbor Verification](Packet_Tracer_Screenshots/04-OSPF-Neighbor.png)
 
 - Cisco Packet Tracer
 - VLANs and 802.1Q trunking
@@ -38,6 +42,7 @@ The HQ VLANs use router-on-a-stick inter-VLAN routing through R1.
 - SSH version 2 for secure remote access
 
 ## Network Features
+![OSPF Branch Route](Packet_Tracer_Screenshots/05-OSPF-Branch-Route.png)
 
 - Segmented HQ network using four VLANs.
 - DHCP configured for automatic client addressing.
@@ -47,6 +52,13 @@ The HQ VLANs use router-on-a-stick inter-VLAN routing through R1.
 - SSH v2 configured for secure remote management of R1.
 
 ## Validation
+![Connectivity Tests](Packet_Tracer_Screenshots/06-Connectivity-Tests.png)
+
+![ACL Configuration](Packet_Tracer_Screenshots/07-ACL-Configuration.png)
+
+![ACL Blocked Ping](Packet_Tracer_Screenshots/08-ACL-Blocked-Ping.png)
+
+![NAT Translations](Packet_Tracer_Screenshots/09-Nat-Translations.png)
 
 Network operation was verified using Cisco IOS commands and connectivity tests:
 
@@ -60,6 +72,8 @@ Network operation was verified using Cisco IOS commands and connectivity tests:
 - `show ip ssh`
 - Ping tests between HQ VLANs and the branch network
 - SSH login from a PC to R1
+  
+![SSH Version 2 Verification](Packet_Tracer_Screenshots/10-SSH-Verification.png)
 
 ## Project Files
 
@@ -71,6 +85,3 @@ Network operation was verified using Cisco IOS commands and connectivity tests:
 This is a learning and simulation project created in Cisco Packet Tracer. It is not a production network deployment.
 
 - `README.md` — Project documentation
-
-## Notes
-This is a learning and simulation project created in Cisco Packet Tracer. It is not a production network deployment.
