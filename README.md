@@ -24,18 +24,18 @@ The project focuses on building a segmented enterprise network, enabling communi
 
 ## 3. Tools and Technologies
 
-| Tool / Technology | Purpose |
-|---|---|
-| Cisco Packet Tracer | Network design and simulation |
-| Cisco IOS CLI | Device configuration and verification |
-| VLANs | Network segmentation |
-| 802.1Q | VLAN trunking |
-| Router-on-a-stick | Inter-VLAN routing |
-| OSPF | Dynamic routing |
-| DHCP | Automatic IP address allocation |
-| NAT overload (PAT) | Network address translation |
-| Extended ACL | Traffic filtering |
-| SSH version 2 | Secure remote management |
+| Tool / Technology   | Purpose                               |
+|---------------------|---------------------------------------|
+| Cisco Packet Tracer | Network design and simulation         |
+| Cisco IOS CLI       | Device configuration and verification |
+| VLANs               | Network segmentation                  |
+| 802.1Q              | VLAN trunking                         |
+| Router-on-a-stick   | Inter-VLAN routing                    |
+| OSPF                | Dynamic routing                       |
+| DHCP                | Automatic IP address allocation       |
+| NAT overload (PAT)  | Network address translation           |
+| Extended ACL        | Traffic filtering                     |
+| SSH version 2       | Secure remote management              |
 
 ## 4. Network Topology
 
@@ -57,13 +57,13 @@ The HQ network is segmented into four VLANs. Each VLAN uses a separate IPv4 subn
 
 ![VLAN Configuration](Packet_Tracer_Screenshots/02-Vlan-Brief.png)
 
-| VLAN | Name | Network | Default Gateway |
-|---|---|---|---|
-| 10 | USERS | 192.168.10.0/24 | 192.168.10.1 |
-| 20 | ADMIN | 192.168.20.0/24 | 192.168.20.1 |
-| 30 | SUPPORT | 192.168.30.0/24 | 192.168.30.1 |
-| 40 | SERVERS | 192.168.40.0/24 | 192.168.40.1 |
-| — | Branch LAN | 192.168.50.0/24 | 192.168.50.1 |
+| VLAN | Name       | Network         | Default Gateway |
+|------|------------|-----------------|-----------------|
+| 10   | USERS      | 192.168.10.0/24 | 192.168.10.1    |
+| 20   | ADMIN      | 192.168.20.0/24 | 192.168.20.1    |
+| 30   | SUPPORT    | 192.168.30.0/24 | 192.168.30.1    |
+| 40   | SERVERS    | 192.168.40.0/24 | 192.168.40.1    |
+| ---- | Branch LAN | 192.168.50.0/24 | 192.168.50.1    |
 
 ### Inter-VLAN Routing
 
@@ -192,16 +192,16 @@ SSH version 2 was verified, and SSH login from a PC to R1 was tested.
 
 The following Cisco IOS commands were used during configuration and validation:
 
-| Command | Purpose |
-|---|---|
-| `show vlan brief` | Verify VLAN configuration |
-| `show interfaces trunk` | Verify trunk interfaces |
-| `show ip interface brief` | Check interface status and IP addressing |
-| `show ip route ospf` | Verify OSPF-learned routes |
-| `show ip nat translations` | Inspect NAT translation entries |
-| `show ip nat statistics` | Verify NAT statistics |
-| `show access-lists` | Review ACL configuration and matches |
-| `show ip ssh` | Verify SSH status |
+| Command                    | Purpose                                  |
+|----------------------------|------------------------------------------|
+| `show vlan brief`          | Verify VLAN configuration                |
+| `show interfaces trunk`    | Verify trunk interfaces                  |
+| `show ip interface brief`  | Check interface status and IP addressing |
+| `show ip route ospf`       | Verify OSPF-learned routes               |
+| `show ip nat translations` | Inspect NAT translation entries          |
+| `show ip nat statistics`   | Verify NAT statistics                    |
+| `show access-lists`        | Review ACL configuration and matches     |
+| `show ip ssh`              | Verify SSH status                        |
 
 ## 11. Skills Demonstrated
 
@@ -223,12 +223,3 @@ The following Cisco IOS commands were used during configuration and validation:
 
 - `Multi_Site_Enterprise_Network.pkt` — Cisco Packet Tracer topology and configuration.
 - `Packet_Tracer_Screenshots/` — Screenshots documenting the topology, configuration, and validation results.
-
-## 13. How to Use This Lab
-
-1. Download the `.pkt` file from this repository.
-2. Open the file using Cisco Packet Tracer.
-3. Inspect the network topology and device configurations.
-4. Review the VLAN, routing, NAT, ACL, and SSH configurations.
-5. Reproduce the connectivity tests.
-6. Verify the results using the listed Cisco IOS commands.
